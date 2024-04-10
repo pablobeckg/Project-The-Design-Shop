@@ -1,0 +1,134 @@
+/* General code */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "karla";
+    src: url(./fonts/Karla-VariableFont_wght.ttf);
+}
+
+:root {
+    --main-font: "karla";
+    --main-color: #323A45;
+    --main-color2: #848484;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: var(--main-font);
+    color: var(--main-color);
+}
+
+header nav {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3vw;
+    align-items: center;
+    position: fixed;
+    background-color: white;
+    z-index: 1;
+}
+
+header nav h1 {
+    font-size: 2rem;
+}
+
+a {
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 50%;
+}
+
+
+header nav ul {
+    justify-content: flex-end;
+    width: 50%;
+    display: flex;
+    list-style: none;
+    gap: 10%;
+    font-weight: bold;
+}
+
+/* main */
+.grid-parent {
+    padding-top: 10vh;
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    width: 100vw;
+    column-gap: 1.6vw;
+    row-gap:9vh;
+    padding: 10vh 3vw 0 3vw;
+    margin-bottom: 9vh;
+}
+
+.big {
+    grid-column: 1 / -1;
+    height: 90vh;
+}
+
+.text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box {
+    height: 70vh;
+}
+
+h3{
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+}
+
+.text span {
+    color: var(--main-color2);
+}
+
+img {
+    height: 90%;
+    width: 100%;
+    object-fit: cover;
+}
+
+footer {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+    padding: 0 3vw;
+    row-gap: 4vh;
+    column-gap: 4vw;
+}
+
+footer h4 {
+    font-size: 1.3rem;
+}
+
+footer h5 {
+    font-size: 1.2rem;
+}
+
+h5 span {
+    font-weight: 400;
+}
+
+footer h6 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+footer .cursive {
+    font-style: oblique;
+}
+
+footer .gray {
+    color: var(--main-color2);
+}
